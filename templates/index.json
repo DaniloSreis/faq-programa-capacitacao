@@ -1,0 +1,13 @@
+// cada arquivo json representa uma página da loja que tem várias seções
+
+{
+  "sections": {
+    "Faq": {
+      // o type tem que ter o mesmo nome do arquivo que será renderizado
+      "type": "faq",
+      "settings": {}
+    }
+  },
+  // order é usado para organizar qual seção deve aparecer primeiro ["main", "faq", "contact"]
+  "order": ["faq"]
+}
