@@ -2,11 +2,22 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
+    {% comment %}
+      tudo que está dentro de double chaves {{}} é algo que vem da shopify
+    {% endcomment %}
     <title>{{ shop.name }}</title>
+    {% comment %}
+      essa tag é usada para injetar automaticamente todos os scripts e códgios
+      necessários para o funcionamento da plataforma
+    {% endcomment %}
     {{ content_for_header }}
-
-</head>
+  </head>
   <body>
+    {% comment %} 
+      É um espaço reservado dinâmico onde o conteúdo de cada página específica será exibido.
+      Quando o cliente entra na página de Loção Principal, a shopify pega o template proudct.json
+      e o cola exatamente onde está a tag content_for_layout
+    {% endcomment %}
     {{ content_for_layout }}
   </body>
 </html>
